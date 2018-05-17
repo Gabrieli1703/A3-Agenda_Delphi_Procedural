@@ -1,1 +1,0 @@
-# A3-Agenda_Delphi_Procedural
