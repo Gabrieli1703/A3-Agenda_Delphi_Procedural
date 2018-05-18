@@ -1,4 +1,5 @@
 # A3-Agenda Delphi Procedural
 
-Esta agenda de contatos permite a criação, edição, busca e exclusão de um contato.
+Esta aplicação é uma agenda para a organização de contatos
 
+<h2>Recursos</h2>
