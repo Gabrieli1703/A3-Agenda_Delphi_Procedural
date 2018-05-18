@@ -2,4 +2,6 @@
 
 Esta aplicação é uma agenda para a organização de contatos
 
-<h2>Recursos</h2>
+##Recursos
+
+- Criar, atualizar excluir um contato.
