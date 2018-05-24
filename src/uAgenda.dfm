@@ -21,13 +21,11 @@ object frmAgenda: TfrmAgenda
     Top = 0
     Width = 523
     Height = 362
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     Align = alClient
     TabOrder = 0
-    ExplicitHeight = 372
     object TabSheet1: TTabSheet
       Caption = 'Criar Contato'
-      ExplicitHeight = 344
       object GroupBox1: TGroupBox
         Left = 46
         Top = 3
@@ -163,7 +161,7 @@ object frmAgenda: TfrmAgenda
           Text = '     -   '
         end
         object btOK: TButton
-          Left = 218
+          Left = 225
           Top = 248
           Width = 75
           Height = 25
@@ -212,9 +210,6 @@ object frmAgenda: TfrmAgenda
     object TabSheet2: TTabSheet
       Caption = 'Lista de Contatos'
       ImageIndex = 1
-      ExplicitLeft = -172
-      ExplicitTop = 28
-      ExplicitHeight = 344
       object lbContato: TListBox
         Left = 3
         Top = 3

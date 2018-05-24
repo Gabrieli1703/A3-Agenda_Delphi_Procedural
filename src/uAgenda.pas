@@ -251,7 +251,7 @@ begin
     Exit;
 
   for i := 0 to 100 do
-     if lbContato.Items[lbContato.ItemIndex] = Agenda[i].Nome then //Se o contato for encontrado
+    if lbContato.Items[lbContato.ItemIndex] = Agenda[i].Nome then //Se o contato for encontrado
     begin
       TabSheet1.Show;
       nome := Agenda[i].Nome;
@@ -482,7 +482,7 @@ begin
 end;
 
 procedure TfrmAgenda.btOKClick(Sender: TObject);
-var i, verificaNome: integer;
+var i, verificaNome, j: integer;
     nome2: string;
 begin
   verificaNome := 0;
@@ -509,9 +509,21 @@ begin
   end;
 
   if btOK.Tag = 2 then //Se for para atualizar
+  begin
     for i := 0 to 100 do
       if Agenda[i].Nome = nome then //Busca o nome do contato
         break;
+
+    for j := 0 to lbContato.Items.Count - 1 do
+    begin
+
+      if lbContato.Items[j] = nome2 then
+      begin
+        ShowMessage('Esse contato já existe');
+        Exit;
+      end;
+    end;
+  end;
 
   //Se todas as informações estiverem completas
   if (rgSexo.ItemIndex <> -1) and (edIdade.Text <> '') and (medTelCel.Text <> '(  )     -    ') and
@@ -553,6 +565,8 @@ begin
     lbContato.Clear;
     Update;
     Create;
+
+    tabsheet2.Show;
   end
   else //Se as informações estiverem incompletas
     ShowMessage('Faltam Informações');
