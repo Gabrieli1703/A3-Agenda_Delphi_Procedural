@@ -202,7 +202,7 @@ object frmAgenda: TfrmAgenda
         Top = 295
         Width = 419
         Height = 36
-        Caption = 'Criar'
+        Caption = 'Clique aqui para criar um novo contato'
         TabOrder = 1
         OnClick = btCriarClick
       end

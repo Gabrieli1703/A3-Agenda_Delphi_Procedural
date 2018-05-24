@@ -517,7 +517,7 @@ begin
     for j := 0 to lbContato.Items.Count - 1 do
     begin
 
-      if lbContato.Items[j] = nome2 then
+      if (lbContato.Items[j] = nome2) and (nome2 <> Agenda[i].Nome) then
       begin
         ShowMessage('Esse contato já existe');
         Exit;
